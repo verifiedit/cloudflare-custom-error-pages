@@ -33,14 +33,17 @@
              src="https://static.verified.com.au/images/verified-logo-white.png"
              width="150">
     </div>
-    <h1 class="font-bold text-2xl text-center mb-8">Please hold</h1>
-    <p class="text-xl text-center mb-8 m-2">Your access has been restricted due to too many requests.
-        <br>Please wait a couple of minutes before trying again.</p>
+
+    <div class="relative p-4 bg-white md:rounded-md w-full prose max-w-screen-md mt-4 md:m-auto">
+        <h1 class="font-bold text-2xl m-2 mb-8">You are being rate limited</h1>
+        <p class="text-xl m-2">Your access has been restricted due to too many requests.</p>
+        <p class="text-xl m-2">Please wait a couple of minutes before trying again.</p>
+    </div>
 
     <div class="flex md:flex-row flex-col gap-2 md:gap-10 my-10 px-2 md:justify-center text-xs">
         <span>Cloudflare Ray ID: ::RAY_ID::</span>
         <span>Your IP: ::CLIENT_IP::</span>
-        <span>Performance &amp;amp; security by <a href="https://cloudflare.com" title="Cloudflare">Cloudflare</a>, innovation by <a
+        <span>Performance &amp; security by <a href="https://cloudflare.com" title="Cloudflare">Cloudflare</a>, innovation by <a
                 href="https://verified.com.au" title="Verified">Verified</a>&trade;</span>
     </div>
 </main>
