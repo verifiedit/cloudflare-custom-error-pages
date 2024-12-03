@@ -25,6 +25,23 @@
     <title>Verified&trade;</title>
     <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
     <link rel="stylesheet" href="assets/styles.css" type="text/css">
+    <style type="text/tailwindcss">
+        @tailwind base;
+        @tailwind components;
+        @tailwind utilities;
+
+        .cf-error-details h1 {
+            @apply font-bold mb-8 text-2xl m-2;
+        }
+
+        .cf-error-details p {
+            @apply text-lg mb-8 m-2;
+        }
+
+        .cf-error-details ul {
+            @apply text-sm m-2 list-none;
+        }
+    </style>
 </head>
 <body>
 <main class="relative flex-col items-center justify-center gap-6 min-h-dvh">
@@ -33,16 +50,12 @@
              src="assets/verified-logo-white-150.png"
              width="150">
     </div>
-    <h1 class="font-bold text-2xl text-center mb-8">An error occurred on the server</h1>
-    <p class="text-xl text-center mb-8 m-2">Please try again shortly</p>
 
-    <div class="relative p-4 bg-verified-blue md:rounded-md w-full max-w-screen-md prose prose-invert mt-4 md:m-auto">
+    <div class="relative p-4 bg-white md:rounded-md w-full prose max-w-screen-md mt-4 md:m-auto">
         ::CLOUDFLARE_ERROR_500S_BOX::
     </div>
 
-    <div class="flex md:flex-row flex-col gap-2 md:gap-10 my-10 px-2 md:justify-center text-xs">
-        <span>Cloudflare Ray ID: ::RAY_ID::</span>
-        <span>Your IP: ::CLIENT_IP::</span>
+    <div class="flex md:flex-row flex-col gap-2 md:gap-10 mt-6 px-2 md:justify-center text-xs">
         <span>Performance &amp; security by <a href="https://cloudflare.com" title="Cloudflare">Cloudflare</a>, innovation by <a
                 href="https://verified.com.au" title="Verified">Verified</a>&trade;</span>
     </div>
