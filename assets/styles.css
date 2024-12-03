@@ -11,3 +11,54 @@ a {
 .bg-verified-blue {
     background-color: rgb(0 74 132);
 }
+
+.font-bold {
+    font-weight: 700;
+}
+
+.list-none {
+    list-style-type: none;
+}
+
+.m-2 {
+    margin: 0.5rem /* 8px */;
+}
+
+.mb-8 {
+    margin-bottom: 2rem /* 32px */;
+}
+
+.text-sm {
+    font-size: 0.875rem /* 14px */;
+    line-height: 1.25rem /* 20px */;
+}
+
+.text-lg {
+    font-size: 1.125rem /* 18px */;
+    line-height: 1.75rem /* 28px */;
+}
+
+.text-2xl {
+    font-size: 1.5rem /* 24px */;
+    line-height: 2rem /* 32px */;
+}
+
+.cf-error-details h1 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin: 0.5rem 0.5rem 2rem;
+}
+
+.cf-error-details p {
+    margin: 0.5rem 0.5rem 2rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+.cf-error-details ul {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    list-style-type: none;
+    margin: 0.5rem;
+}
